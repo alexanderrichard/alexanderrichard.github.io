@@ -1,1 +1,254 @@
-Being created...
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alexander Richard - Computer Vision Group - University of Bonn</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/publications.css" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500" rel="stylesheet" type='text/css'>
+    <style type="text/css"></style>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".trigger").click(function(){ // trigger
+                $(this).nextAll(".abstract").slideToggle("fast");
+                $(this).children("a").toggleClass("closed open");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="headermain">
+        <div class="pubimg"><img src="img/alex.jpg" class="profilepic"></div>
+        <div style="display: table-row">
+            <div class="name">Alexander Richard</div>
+            <div class="affiliation">PhD Student, University of Bonn</div>
+            <div class="affiliation">Computer Vision Group of Prof. Juergen Gall</div>
+            <div class="contact">richard [at] iai.uni-bonn.de</div>
+        </div>
+    </div>
+    <div class="menu">
+        <table style="width: 100%;">
+            <tr>
+                <th class="menuentry" style="width: 25%;"><a href="#publications">Publications</a></th>
+                <th class="menuentry" style="width: 50%;"><a href="#projects">Projects</a></th>
+                <th class="menuentry" style="width: 25%;"><a href="#education">Education</a></th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="main">
+
+
+    <!-- PUBLICATIONS -->
+    <a name="publications">
+    <div class="headline">Publications</div>
+
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_recurrent_residual.png" class="thumbnail"></div>
+        <div style="display:table-row">
+            <div class="pubtitle">Recurrent Residual Learning for Action Recognition</div>
+            <div class="pubauthors">Ahsan Iqbal, Alexander Richard, Hilde Kuehne, Juergen Gall</div>
+            <div class="pubinfo">German Conference on Pattern Recognition (GCPR), 2017 (to appear) (Best Master's Award)</div>
+            <div class="pubbox trigger"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="publications/pdf/richard_recurrent_residual_learning.pdf">pdf</a></div>
+            <div class="pubbox"><a href="publications/bibtex/richard_recurrent_residual.bib">BibTex</div>
+            <div class="pubbox"><a href="#">Code</a></div>
+            <div class="abstract">Action recognition is a fundamental problem in computer vision with a lot of potential applications such as video surveillance, human computer interaction, and robot learning. Given pre-segmented videos, the task is to recognize actions happening within videos. Historically, hand crafted video features were used to address the task of action recognition. With the success of Deep ConvNets as an image analysis method, a lot of extensions of standard ConvNets were purposed to process variable length video data. In this work, we propose a novel recurrent ConvNet architecture called recurrent residual networks to address the task of action recognition. The approach extends ResNet, a state of the art model for image classification. While the original formulation of ResNet aims at learning spatial residuals in its layers, we extend the approach by introducing recurrent connections that allow to learn a spatio-temporal residual. In contrast to fully recurrent networks, our temporal connections only allow a limited range of preceding frames to contribute to the output for the current frame, enabling efficient training and inference as well as limiting the temporal context to a reasonable local range around each frame. On a large-scale action recognition dataset, we show that our model improves over both, the standard ResNet architecture and a ResNet extended by a fully recurrent layer.</div>
+        </div>
+    </div>
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_weakly_supervised_action_learning.png" class="thumbnail"></div>
+        <div style="display:table-row">
+            <div class="pubtitle">Weakly Supervised Action Learning with RNN based Fine-to-coarse Modeling</div>
+            <div class="pubauthors">Alexander Richard, Hilde Kuehne, Juergen Gall</div>
+            <div class="pubinfo">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017 (Oral)</div>
+            <div class="pubbox trigger"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="publications/pdf/richard_weakly_supervised_action_learning.pdf">pdf</a></div>
+            <div class="pubbox"><a href="publications/bibtex/richard_weakly_supervised_action_learning.bib">BibTex</div>
+            <div class="pubbox"><a href="https://github.com/alexanderrichard/squirrel">Code</a></div>
+            <div class="abstract">We present an approach for weakly supervised learning of human actions. Given a set of videos and an ordered list of the occurring actions, the goal is to infer start and end frames of the related action classes within the video and to train the respective action classifiers without any need for hand labeled frame boundaries. To address this task, we propose a combination of a discriminative representation of subactions, modeled by a recurrent neural network, and a coarse probabilistic model to allow for a temporal alignment and inference over long sequences. While this system alone already generates good results, we show that the performance can be further improved by approximating the number of subactions to the characteristics of the different action classes. To this end, we adapt the number of subaction classes by iterating realignment and reestimation during training. The proposed system is evaluated on two benchmark datasets, the Breakfast and the Hollywood extended dataset, showing a competitive performance on various weak learning tasks such as temporal action segmentation and action alignment.</div>
+        </div>
+    </div>
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_weakly_supervised_learning.png" class="thumbnail"></div>
+        <div style="display:table-row">
+            <div class="pubtitle">Weakly Supervised Learning of Actions from Transcripts</div>
+            <div class="pubauthors">Hilde Kuehne, Alexander Richard, Juergen Gall</div>
+            <div class="pubinfo">Computer Vision and Image Understanding (CVIU), 2017 (to appear)</div>
+            <div class="pubbox trigger"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="publications/pdf/richard_weakly_supervised_learning.pdf">pdf</a></div>
+            <div class="pubbox"><a href="publications/bibtex/richard_weakly_supervised_learning.bib">BibTex</a></div>
+            <div class="abstract">We present an approach for weakly supervised learning of human actions from video transcriptions. Our system is based on the idea that, given a sequence of input data and a transcript, i.e. a list of the order the actions occur in the video, it is possible to infer the actions within the video stream, and thus, learn the related action models without the need for any frame-based annotation. Starting from the transcript information at hand, we split the given data sequences uniformly based on the number of expected actions. We then learn action models for each class by maximizing the probability that the training video sequences are generated by the action models given the sequence order as defined by the transcripts. The learned model can be used to temporally segment an unseen video with or without transcript. We evaluate our approach on four distinct activity datasets, namely Hollywood Extended, MPII Cooking, Breakfast and CRIM13. We show that our system is able to align the scripted actions with the video data and that the learned models localize and classify actions competitively in comparison to models trained with full supervision, i.e. with frame level annotations, and that they outperform any current state-of-the-art approach for aligning transcripts with video data.</div>
+        </div>
+    </div>
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_bow_equivalent_rnn_cviu.png" class="thumbnail"></div>
+        <div style="display:table-row">
+            <div class="pubtitle">A Bag-of-Words Equivalent Recurrent Neural Network for Action Recognition</div>
+            <div class="pubauthors">Alexander Richard, Juergen Gall</div>
+            <div class="pubinfo">Computer Vision and Image Understanding (CVIU), 2017</div>
+            <div class="pubbox trigger"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="publications/pdf/richard_bow_equivalent_rnn_cviu.pdf">pdf</a></div>
+            <div class="pubbox"><a href="publications/bibtex/richard_bow_equivalent_rnn_cviu.bib">BibTex</div>
+            <div class="pubbox"><a href="https://github.com/alexanderrichard/squirrel">Code</a></div>
+            <div class="abstract">The traditional bag-of-words approach has found a wide range of applications in computer vision. The standard pipeline consists of a generation of a visual vocabulary, a quantization of the features into histograms of visual words, and a classification step for which usually a support vector machine in combination with a non-linear kernel is used. Given large amounts of data, however, the model suffers from a lack of discriminative power. This applies particularly for action recognition, where the vast amount of video features needs to be subsampled for unsupervised visual vocabulary generation. Moreover, the kernel computation can be very expensive on large datasets. In this work, we propose a recurrent neural network that is equivalent to the traditional bag-of-words approach but enables for the application of discriminative training. The model further allows to incorporate the kernel computation into the neural network directly, solving the complexity issue and allowing to represent the complete classification system within a single network. We evaluate our method on four recent action recognition benchmarks and show that the conventional model as well as sparse coding methods are outperformed.</div>
+        </div>
+    </div>
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_temporal_action_segmentation.png" class="thumbnail"></div>
+        <div style="display:table-row">
+            <div class="pubtitle">Temporal Action Segmentation using a Statistical Language Model</div>
+            <div class="pubauthors">Alexander Richard, Juergen Gall</div>
+            <div class="pubinfo">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016</div>
+            <div class="pubbox trigger"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://www.youtube.com/watch?v=qrArshf7bjAhttps://www.youtube.com/watch?v=qrArshf7bjA">Spotlight</a></div>
+            <div class="pubbox"><a href="publications/pdf/richard_temporal_action_segmentation.pdf">pdf</a></div>
+            <div class="pubbox"><a href="publications/bibtex/richard_temporal_action_segmentation.bib">BibTex</div>
+            <div class="pubbox"><a href="https://github.com/alexanderrichard/squirrel">Code</a></div>
+            <div class="abstract">While current approaches to action recognition on pre-segmented video clips already achieve high accuracies, temporal action detection is still far from comparably good results. Automatically locating and classifying the relevant action segments in videos of varying lengths proves to be a challenging task. We propose a novel method for temporal action detection including statistical length and language modeling to represent temporal and contextual structure. Our approach aims at globally optimizing the joint probability of three components, a length and language model and a discriminative action model, without making intermediate decisions. The problem of finding the most likely action sequence and the corresponding segment boundaries in an exponentially large search space is addressed by dynamic programming. We provide an extensive evaluation of each model component on Thumos 14, a large action detection dataset, and report state-of-the-art results on three datasets.</div>
+        </div>
+    </div>
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_bow_equivalent_rnn.png" class="thumbnail"></div>
+        <div style="display:table-row">
+            <div class="pubtitle">A BoW-equivalent Recurrent Neural Network for Action Recognition</div>
+            <div class="pubauthors">Alexander Richard, Juergen Gall</div>
+            <div class="pubinfo">British Machine Vision Conference (BMVC), 2015</div>
+            <div class="pubbox trigger"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="publications/pdf/richard_bow_equivalent_rnn.pdf">pdf</a></div>
+            <div class="pubbox"><a href="publications/bibtex/richard_bow_equivalent_rnn.bib">BibTex</div>
+            <div class="pubbox"><a href="https://github.com/alexanderrichard/squirrel">Code</a></div>
+            <div class="abstract">Bag-of-words (BoW) models are widely used in the field of computer vision. A BoW model consists of a visual vocabulary that is generated by unsupervised clustering the features of the training data, e.g., by using kMeans. The clustering methods, however, struggle with large amounts of data, in particular, in the context of action recognition. In this paper, we propose a transformation of the standard BoW model into a neural network, enabling discriminative training of the visual vocabulary on large action recognition datasets. We show that our model is equivalent to the original BoW model but allows for the application of supervised neural network training. Our model outperforms the conventional BoW model and sparse coding methods on recent action recognition benchmarks.</div>
+        </div>
+    </div>
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_mnsgd.png" class="thumbnail"></div>
+        <div style="display:table-row">
+            <div class="pubtitle">Mean-normalized Stochastic Gradient for Large-scale Deep Learning</div>
+            <div class="pubauthors">Simon Wiesler, Alexander Richard, Ralf Schl&uumlter, Hermann Ney</div>
+            <div class="pubinfo">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2014</div>
+            <div class="pubbox trigger"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="publications/pdf/richard_mnsgd.pdf">pdf</a></div>
+            <div class="pubbox"><a href="publications/bibtex/richard_mnsgd.bib">BibTex</a></div>
+            <div class="abstract">Deep neural networks are typically optimized with stochastic gradient descent (SGD). In this work, we propose a novel second-order stochastic optimization  algorithm. The algorithm is based on  analytic results showing that a non-zero mean of features is harmful for the optimization. We prove convergence of our algorithm in a convex setting. In our experiments we show that our proposed algorithm converges faster than SGD. Further, in contrast to earlier work, our algorithm allows for training models with a factorized structure from scratch. We found this structure to be very useful not only because it accelerates training and decoding, but also because it is a very effective means against overfitting.  Combining our proposed optimization algorithm with this model structure, model size can be reduced by a factor of eight and still improvements in recognition error rate are obtained. Additional gains are obtained by improving the Newbob learning rate strategy.</div>
+        </div>
+    </div>
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_rasr.png" class="thumbnail"></div>
+        <div style="display:table-row">
+            <div class="pubtitle">RASR/NN: The RWTH Neural Network Toolkit for Speech Recognition</div>
+            <div class="pubauthors">Simon Wiesler, Alexander Richard, Pavel Golik, Ralf Schl&uumlter, Hermann Ney</div>
+            <div class="pubinfo">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2014</div>
+            <div class="pubbox trigger"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="publications/pdf/richard_rasr.pdf">pdf</a></div>
+            <div class="pubbox"><a href="publications/bibtex/richard_rasr.bib">BibTex</a></div>
+            <div class="pubbox"><a href="https://www-i6.informatik.rwth-aachen.de/rwth-asr/">Code</a></div>
+            <div class="abstract">This paper describes the new release of RASR - the open source version of the well-proven speech recognition toolkit developed and used at RWTH Aachen University. The focus is put on the implementation of the NN module for training neural network acoustic models. We describe code design, configuration, and features of the NN module. The key feature is a high flexibility regarding the network topology, choice of activation functions, training criteria, and optimization algorithm, as well as a built-in support for efficient GPU computing. The evaluation of run-time performance and recognition accuracy is performed exemplary with a deep neural network as acoustic model in a hybrid NN/HMM system. The results show that RASR achieves a state-of-the-art performance on a real-world large vocabulary task, while offering a complete pipeline for building and applying large scale speech recognition systems.</div>
+        </div>
+    </div>
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_critical_evaluation.png" class="thumbnail"></div>
+        <div style="display:table-row">
+            <div class="pubtitle">A Critical Evaluation of Stochastic Algorithms for Convex Optimization</div>
+            <div class="pubauthors">Simon Wiesler, Alexander Richard, Ralf Schl&uumlter, Hermann Ney</div>
+            <div class="pubinfo">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2013</div>
+            <div class="pubbox trigger"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="publications/pdf/richard_critical_evaluation.pdf">pdf</a></div>
+            <div class="pubbox"><a href="publications/bibtex/richard_critical_evaluation.bib">BibTex</a></div>
+            <div class="abstract">Log-linear models find a wide range of applications in pattern recognition. The training of log-linear models is a convex optimization problem. In this work, we compare the performance of stochastic and batch optimization algorithms. Stochastic algorithms are fast on large data sets but can not be parallelized well. In our experiments on a broadcast conversations recognition task, stochastic methods yield competitive results after only a short training period, but when spending enough computational resources for parallelization, batch algorithms are competitive with stochastic algorithms. We obtained slight improvements by using a stochastic second order algorithm. Our best log-linear model outperforms the maximum likelihood trained Gaussian mixture model baseline although being ten times smaller.</div>
+        </div>
+    </div>
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_feature_selection.png" class="thumbnail"></div>
+        <div style="display:table-row">
+            <div class="pubtitle">Feature Selection for Log-linear Acoustic Models</div>
+            <div class="pubauthors">Simon Wiesler, Alexander Richard, Yotaro Kubo, Ralf Schl&uumlter, Hermann Ney</div>
+            <div class="pubinfo">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2011</div>
+            <div class="pubbox trigger"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="publications/pdf/richard_feature_selection.pdf">pdf</a></div>
+            <div class="pubbox"><a href="publications/bibtex/richard_feature_selection.bib">BibTex</a></div>
+            <div class="abstract">Log-linear acoustic models have been shown to be competitive with Gaussian mixture models in speech recognition. Their high training time can be reduced by feature selection. We compare a simple univariate feature selection algorithm with ReliefF - an efficient multivariate algorithm. An alternative to feature selection is l1-regularized training, which leads to sparse models. We observe that this gives no speedup when sparse features are used, hence feature selection methods are preferable. For dense features, l1-regularization can reduce training and recognition time. We generalize the well known Rprop algorithm for the optimization of l1-regularized functions. Experiments on the Wall Street Journal corpus showed that a large number of sparse features could be discarded without loss of performance. A strong regularization led to slight performance degradations, but can be useful on large tasks, where training the full model is not tractable.</div>
+        </div>
+    </div>
+
+
+    <!-- PROJECTS -->
+    <a name="projects">
+    <div class="headline">Projects</div>
+
+    <div class="project">
+        <div class="textbf">Squirrel</div>
+        <div>A large action recognition framework featuring CNNs, RNNs, and efficient Viterbi decodings supporting left-regular grammars and length modeling.</div>
+        <div class="projectbox"><a href="https://github.com/alexanderrichard/squirrel">GitHub</a></div>
+    </div>
+    <div class="project">
+        <div class="textbf">Queuing-Tool</div>
+        <div>A priority scheduler allowing to distribute resources of a machine among several jobs of different users. Supports multiple GPUs and multi-threaded programs. Using simple extentions to a bash script, users can define the resources to allocate, how many job instances to run in parallel, or which jobs have to wait for other jobs to be finished before being started.</div>
+        <div class="projectbox"><a href="https://github.com/alexanderrichard/queueing-tool">GitHub</a></div>
+    </div>
+
+
+    <!-- EDUCATION -->
+    <a name="education">
+    <div class="headline">Education</div>
+
+    <!-- timeline -->
+    <div class="timeline">
+        <!-- entry -->
+        <div class="entry">
+            <div class="title">
+                <p class="textbf">2014 - Present</p>
+                <p>PhD Student, University of Bonn<p>
+            </div>
+        <div class="body">
+            <p>Researcher in the field of video analytics and action recognition.<br>Research focus on temporal action segmentation and action labeling for long, untrimmed videos containing multiple action instances.</p>
+        </div>
+        <!-- entry -->
+        <div class="entry">
+            <div class="title">
+                <p class="textbf">2011 - 2014</p>
+                <p>Master's Degree, RWTH Aachen University<p>
+            </div>
+        <div class="body">
+            <p>Thesis: <i>Improved Optimization of Neural Networks</i><br>Implementation of a neural network module for the speech recognition software RASR; design, analysis, and evaluation of a novel optimization algorihm called <i>mean-normalized stochastic gradient descent (MN-SGD)</i></p>
+        </div>
+        <!-- entry -->
+        <div class="entry">
+            <div class="title">
+                <p class="textbf">2008 - 2011</p>
+                <p>Bachelor's Degree, RWTH Aachen University<p>
+            </div>
+        <div class="body">
+            <p>Thesis: <i>Optimization of Log-linear Models and Online Learning</i><br>Analytical and empirical evaluation of various optimization methods for log-linear models.</p>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
