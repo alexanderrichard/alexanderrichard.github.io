@@ -1,6 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --color_gray: #555555;
     --color_blue: #0069cc;
+    --color_lightgray: #DDDDDD;
     font-family: 'Asap', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -10,6 +16,7 @@
 a:link {
     color: inherit;
     text-decoration: none;
+    font-weight: 400;
 }
 
 a:visited {
@@ -19,7 +26,6 @@ a:visited {
 .main {
     width: 800px;
     margin: auto;
-    margin-top: 264px;
 }
 
 .headline {
@@ -36,5 +42,4 @@ a:visited {
 .textbf {
     font-weight: 500;
 }
-
 
