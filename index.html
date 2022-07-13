@@ -62,6 +62,66 @@
 
     <!-- publication -->
     <div class="publication">
+        <div class="pubimg"><img src="publications/img/aksan2022lipflow.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">LiP-Flow: Learning Inference-time Priors for Codec Avatars via Normalizing Flows in Latent Space</div>
+            <div class="pubauthors">Emre Aksan, Shugao Ma, Akin Caliskan, Stanislav Pidhorskyi, <b>Alexander Richard</b>, Shih-En Wei, Jason Saragih, Otmar Hilliges</div>
+            <div class="pubinfo">European Conference on Computer Vision (ECCV), 2022</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://arxiv.org/abs/2203.07881">pdf</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">Neural face avatars that are trained from multi-view data captured in camera domes can produce photo-realistic 3D reconstructions. However, at inference time, they must be driven by limited inputs such as partial views recorded by headset-mounted cameras or a frontfacing camera, and sparse facial landmarks. To mitigate this asymmetry, we introduce a prior model that is conditioned on the runtime inputs and tie this prior space to the 3D face model via a normalizing flow in the latent space. Our proposed model, LiP-Flow, consists of two encoders that learn representations from the rich training-time and impoverished inference-time observations. A normalizing flow bridges the two representation spaces and transforms latent samples from one domain to another, allowing us to define a latent likelihood objective. We trained our model end-to-end to maximize the similarity of both representation spaces and the reconstruction quality, making the 3D face model aware of the limited driving signals. We conduct extensive evaluations where the latent codes are optimized to reconstruct 3D avatars from partial or sparse observations. We show that our approach leads to an expressive and effective prior, capturing facial dynamics and subtle expressions better.</div>
+            <div class="bibtex">@inproceedings{aksan2022lipflow,
+  title={LiP-Flow: Learning Inference-time Priors for Codec Avatars via Normalizing Flows in Latent Space},
+  author={Aksan, Emre and Ma, Shugao and Caliskan, Akin and Pidhorskyi, Stanislav and Richard, Alexander and Wei, Shih-En and Saragih, Jason and Hilliges, Otmar},
+  booktitle={European Conference on Computer Vision},
+  year={2022}
+}</div>
+        </div>
+    </div>
+
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_end2endbinaural.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">End-to-End Binaural Speech Synthesis</div>
+            <div class="pubauthors">Wen-Chin Huang, Dejan Markovic, Israel D. Gebru, Anjali Menon, <b>Alexander Richard</b></div>
+            <div class="pubinfo">Interspeech, 2022</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://arxiv.org/abs/2207.03697">pdf</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">In this work, we present an end-to-end binaural speech synthesis system that combines a low-bitrate audio codec with a powerful binaural decoder that is capable of accurate speech binauralization while faithfully reconstructing environmental factors like ambient noise or reverb. The network is a modified vector-quantized variational autoencoder, trained with several carefully designed objectives, including an adversarial loss. We evaluate the proposed system on an internal binaural dataset with objective metrics and a perceptual study. Results show that the proposed approach matches the ground truth data more closely than previous methods. In particular, we demonstrate the capability of the adversarial loss in capturing environment effects needed to create an authentic auditory scene.</div>
+            <div class="bibtex">@inproceedings{huang2022endtoend,
+  title={End-to-End Binaural Speech Synthesis},
+  author={Huang, Wen-Chin and Markovic, Dejan and Gebru, Israel D and Menon, Anjali and Richard, Alexander},
+  booktitle={Interspeech},
+  year={2022}
+}</div>
+        </div>
+    </div>
+
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/richard_multichannel.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">Implicit Neural Spatial Filtering for Multichannel Source Separation in the Waveform Domain</div>
+            <div class="pubauthors">Dejan Markovic, Alexandre Defossez, <b>Alexander Richard</b></div>
+            <div class="pubinfo">Interspeech, 2022</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://arxiv.org/abs/2206.15423">pdf</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">We present a single-stage casual waveform-to-waveform multichannel model that can separate moving sound sources based on their broad spatial locations in a dynamic acoustic scene. We divide the scene into two spatial regions containing, respectively, the target and the interfering sound sources. The model is trained end-to-end and performs spatial processing implicitly, without any components based on traditional processing or use of hand-crafted spatial features. We evaluate the proposed model on a real-world dataset and show that the model matches the performance of an oracle beamformer followed by a state-of-the-art single-channel enhancement network.</div>
+            <div class="bibtex">@inproceedings{markovic2022multichannel,
+  title={Implicit Neural Spatial Filtering for Multichannel Source Separation in the Waveform Domain},
+  author={Markovic, Dejan and Defossez, Alexandre and Richard, Alexander},
+  booktitle={Interspeech},
+  year={2022}
+}</div>
+        </div>
+    </div>
+
+    <!-- publication -->
+    <div class="publication">
         <div class="pubimg"><img src="publications/img/richard_av_codecs.png" class="thumbnail"></div>
         <div class="pubtext">
             <div class="pubtitle">Audio-Visual Speech Codecs: Rethinking Audio-Visual Speech Enhancement by Re-Synthesis</div>
