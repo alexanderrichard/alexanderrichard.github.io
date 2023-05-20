@@ -62,6 +62,48 @@
 
     <!-- publication -->
     <div class="publication">
+        <div class="pubimg"><img src="https://raw.githubusercontent.com/facebookresearch/AudioDec/main/figs/architecture-1.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">AudioDec: An Open-source Streaming High-fidelity Neural Audio Codec</div>
+            <div class="pubauthors">Yi-Chiao Wu, Israel D. Gebru, Dejan Markovic, <b>Alexander Richard</b></div>
+            <div class="pubinfo">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2023</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://ieeexplore.ieee.org/document/10096509">pdf</a></div>
+            <div class="pubbox"><a href="https://github.com/facebookresearch/AudioDec">Code</a></div>
+            <div class="pubbox"><a href="https://bigpon.github.io/AudioDec_demo/">Demo</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">A good audio codec for live applications such as telecommunication is characterized by three key properties: (1) compression, i.e.\ the bitrate that is required to transmit the signal should be as low as possible; (2) latency, i.e.\ encoding and decoding the signal needs to be fast enough to enable communication without or with only minimal noticeable delay; and (3) reconstruction quality of the signal. In this work, we propose an open-source, streamable, and real-time neural audio codec that achieves strong performance along all three axes: it can reconstruct highly natural sounding 48~kHz speech signals while operating at only 12~kbps and running with less than 6~ms (GPU)/10~ms (CPU) latency. An efficient training paradigm is also demonstrated for developing such neural audio codecs for real-world scenarios. Both objective and subjective evaluations using the VCTK corpus are provided. To sum up, AudioDec is a well-developed plug-and-play benchmark for audio codec applications.</div>
+            <div class="bibtex">@inproceedings{wu2023audiodec,
+  title={AudioDec: An Open-source Streaming High-fidelity Neural Audio Codec},
+  author={Wu, Yi-Chiao and Gebru, Israel D. and Markovic, Dejan and Richard, Alexander},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing},
+  year={2023}
+}</div>
+        </div>
+    </div>
+
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/manocha2023nord.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">NORD: NOn-matching Reference based Relative Depth estimation From Binaural Speech</div>
+            <div class="pubauthors">Pranay Manocha, Israel D. Gebru, Anurag Kumar, Dejan Markovic, <b>Alexander Richard</b></div>
+            <div class="pubinfo">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2023</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://ieeexplore.ieee.org/abstract/document/10094615">pdf</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">We propose NORD: a novel framework for estimating the relative depth between two binaural speech recordings. In contrast to existing depth estimation techniques, ours only requires audio signals as input. We trained the framework to solve depth preference (i.e. which input perceptually sounds closer to the listener’s head), and quantification tasks (i.e. quantifying the depth difference between the inputs). In addition, training leverages recent advances in metric and multi-task learning, which allows the framework to be invariant to both signal content (i.e. non-matched reference) and directional cues (i.e. azimuth and elevation). Our framework has additional useful qualities that make it suitable for use as an objective metric to benchmark binaural audio systems, particularly depth perception and sound externalization, which we demonstrate through experiments. We also show that NORD generalizes well under different reverberation and environments. The results from preference and quantification tasks correlate well with measured results.</div>
+            <div class="bibtex">@inproceedings{manocha2023nord,
+  title={Nord: Non-Matching Reference Based Relative Depth Estimation from Binaural Speech},
+  author={Manocha, Pranay and Gebru, Israel D. and Kumar, Anurag and Markovic, Dejan and Richard, Alexander},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing},
+  year={2023}
+}</div>
+        </div>
+    </div>
+
+    <!-- publication -->
+    <div class="publication">
         <div class="pubimg"><img src="publications/img/chen2023novelview.png" class="thumbnail"></div>
         <div class="pubtext">
             <div class="pubtitle">Novel-View Acoustic Synthesis</div>
