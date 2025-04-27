@@ -40,11 +40,11 @@
         <div class="pubimg"><img src="img/alex.jpg" class="profilepic"></div>
         <div style="display: table-cell; height: 120px; vertical-align: middle">
                 <div class="name">Alexander Richard</div>
-                <div class="affiliation">Research Scientist at Meta Reality Labs Research, Pittsburgh</div>
+                <div class="affiliation">AI Research Scientist at Meta Reality Labs, Pittsburgh</div>
         </div>
         <table>
             <tr>
-                <th style="width: 33%; text-align: left"><img src="img/email.png" class="icon"> richardalex [_at_] fb.com</th>
+                <th style="width: 33%; text-align: left"><img src="img/email.png" class="icon"> richardalex [_at_] meta.com</th>
                 <th style="width: 33%; text-align: center"><a href="https://scholar.google.de/citations?user=73DTbNAAAAAJ"><img src="img/scholar.png" class="icon"> Google Scholar</a></th>
                 <th style="width: 33%; text-align: right"><a href="https://twitter.com/AlexRichardCS"><img src="img/twitter.png" class="icon"> Twitter</a></th>
             </tr>
@@ -59,6 +59,111 @@
     <!-- PUBLICATIONS -->
     <a name="publications">
     <div class="headline">Publications</div>
+
+
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/lee2025rewind.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">REWIND: Real-Time Egocentric Whole-Body Motion Diffusion with Exemplar-Based Identity Conditioning</div>
+            <div class="pubauthors">Jihyun Lee, Weipeng Xu, <b>Alexander Richard</b>, Shih-En Wei, Shunsuke Saito, Shaojie Bai, Te-Li Wang, Minhyuk Sung, Tae-Kyun Kim, Jason Saragih</div>
+            <div class="pubinfo">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://arxiv.org/abs/2504.04956">pdf</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">We present a novel framework for egocentric 3D motion tracking, focusing on learning high-fidelity social motions from head-mounted camera image inputs. Our approach leverages a motion diffusion model based on cascaded body-hand diffusion denoising for accurate whole-body motion tracking. We build our network upon a modified Transformer-based architecture using windowed relative-temporal attention to achieve better generalizability to arbitrary-length motions. Additionally, we propose a novel exemplar-based identity conditioning method to further boost tracking quality when prior information (i.e., anchor poses) about the target identity is available. In experiments, our framework achieves state-of-the-art whole-body motion tracking accuracy while enabling real-time inference (> 60 FPS) through diffusion distillation. Our supplementary video demonstrates that our approach can estimate significantly more natural social motions from challenging (e.g., occluded or truncated) egocentric input observations compared to the existing state-of-the-arts.</div>
+            <div class="bibtex">@inproceedings{lee2025rewind,
+      title={REWIND: Real-Time Egocentric Whole-Body Motion Diffusion with Exemplar-Based Identity Conditioning},
+      author={Jihyun Lee and Weipeng Xu and Alexander Richard and Shih-En Wei and Shunsuke Saito and Shaojie Bai and Te-Li Wang and Minhyuk Sung and Tae-Kyun Kim and Jason Saragih},
+      booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+      year={2025}
+    }
+}</div>
+        </div>
+    </div>
+
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/welker2025flowdec.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">FlowDec: A flow-based full-band general audio codec with high perceptual quality</div>
+            <div class="pubauthors">Simon Welker, Matthew Le, Ricky T. Q. Chen, Wei-Ning Hsu, Timo Gerkmann, <b>Alexander Richard</b>, Yi-Chiao Wu</div>
+            <div class="pubinfo">International Conference on Learning Representations (ICLR), 2025</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://arxiv.org/abs/2503.01485">pdf</a></div>
+            <div class="pubbox"><a href="https://github.com/facebookresearch/FlowDec">code</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">We propose FlowDec, a neural full-band audio codec for general audio sampled at 48 kHz that combines non-adversarial codec training with a stochastic postfilter based on a novel conditional flow matching method. Compared to the prior work ScoreDec which is based on score matching, we generalize from speech to general audio and move from 24 kbit/s to as low as 4 kbit/s, while improving output quality and reducing the required postfilter DNN evaluations from 60 to 6 without any fine-tuning or distillation techniques. We provide theoretical insights and geometric intuitions for our approach in comparison to ScoreDec as well as another recent work that uses flow matching, and conduct ablation studies on our proposed components. We show that FlowDec is a competitive alternative to the recent GAN-dominated stream of neural codecs, achieving FAD scores better than those of the established GAN-based codec DAC and listening test scores that are on par, and producing qualitatively more natural reconstructions for speech and harmonic structures in music.</div>
+            <div class="bibtex">@inproceedings{welker2025flowdec,
+title={FlowDec: A flow-based full-band general audio codec with high perceptual quality},
+author={Simon Welker and Matthew Le and Ricky T. Q. Chen and Wei-Ning Hsu and Timo Gerkmann and Alexander Richard and YI-CHIAO WU},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+}</div>
+        </div>
+    </div>
+
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/chen2025soundvista.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">SoundVista: Novel-View Ambient Sound Synthesis via Visual-Acoustic Binding</div>
+            <div class="pubauthors">Mingfei Chen, Israel D. Gebru, Ishwarya Ananthabhotla, Christian Richardt, Dejan Markovic, Steven Krenn, Todd Keebler, Jacob Sandakly, Eli Shlizerman, <b>Alexander Richard</b></div>
+            <div class="pubinfo">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://arxiv.org/abs/2504.05576">pdf</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">We introduce SoundVista, a method to generate the ambient sound of an arbitrary scene at novel viewpoints. Given a pre-acquired recording of the scene from sparsely distributed microphones, SoundVista can synthesize the sound of that scene from an unseen target viewpoint. The method learns the underlying acoustic transfer function that relates the signals acquired at the distributed microphones to the signal at the target viewpoint, using a limited number of known recordings. Unlike existing works, our method does not require constraints or prior knowledge of sound source details. Moreover, our method efficiently adapts to diverse room layouts, reference microphone configurations and unseen environments. To enable this, we introduce a visual-acoustic binding module that learns visual embeddings linked with local acoustic properties from panoramic RGB and depth data. We first leverage these embeddings to optimize the placement of reference microphones in any given scene. During synthesis, we leverage multiple embeddings extracted from reference locations to get adaptive weights for their contribution, conditioned on target viewpoint. We benchmark the task on both publicly available data and real-world settings. We demonstrate significant improvements over existing methods.</div>
+            <div class="bibtex">@inproceedings{chen2025soundvista,
+      title={SoundVista: Novel-View Ambient Sound Synthesis via Visual-Acoustic Binding},
+      author={Mingfei Chen and Israel D. Gebru and Ishwarya Ananthabhotla and Christian Richardt and Dejan Markovic and Jake Sandakly and Steven Krenn and Todd Keebler and Eli Shlizerman and Alexander Richard},
+      booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+      year={2025}
+    }
+}</div>
+        </div>
+    </div>
+
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/gebru2025a2b.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">A2B: Neural Rendering of Ambisonic Recordings to Binaural</div>
+            <div class="pubauthors">Isreal D. Gebru, Todd Keebler, Jake Sandakly, Steven Krenn, Dejan Markovic, Julia Buffalini, Samuel Hassel, <b>Alexander Richard</b></div>
+            <div class="pubinfo">International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://ieeexplore.ieee.org/abstract/document/10890507">pdf</a></div>
+            <div class="pubbox"><a href="https://github.com/facebookresearch/A2B">code</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">This paper introduces a novel neural network model for rendering binaural audio directly from ambisonic recordings. We optimized the model end-to-end to learn a direct mapping between ambisonic and binaural signals. Our approach eliminates traditional processing steps that were required to mitigate artifacts due to spherical harmonic order truncation and spatial aliasing, as well as other complex filtering needed to compensate for near-field sound sources. To showcase the advantage of neural network-based rendering over traditional signal processing approaches, we introduce a new dataset that includes challenging near-field sound sources, including speech and background noises. We demonstrate that our model can produce binaural audio results that closely match the fidelity of ground truth binaural recordings. Our comprehensive validation shows that the proposed method outperforms existing methods on several error metrics as well as in subjective evaluations. Model code, demos and datasets are available on our project webpage.</div>
+            <div class="bibtex">@inproceedings{gebru2025a2b,
+  title={A2B: Neural Rendering of Ambisonic Recordings to Binaural},
+  author={Gebru, Israel D and Keebler, Todd and Sandakly, Jake and Krenn, Steven and Markovic, Dejan and Buffalini, Julia and Hassel, Samuel and Richard, Alexander},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year={2025},
+}</div>
+        </div>
+    </div>
+
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/wu2025complexdec.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">ComplexDec: A Domain-robust High-fidelity Neural Audio Codec with Complex Spectrum Modeling</div>
+            <div class="pubauthors">Yi-Chiao Wu, Dejan Markovic, Steven Krenn, Israel D. Gebru, <b>Alexander Richard</b></div>
+            <div class="pubinfo">International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://arxiv.org/pdf/2502.02019v1">pdf</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">Neural audio codecs have been widely adopted in audio-generative tasks because their compact and discrete representations are suitable for both large-language-model-style and regression-based generative models. However, most neural codecs struggle to model out-of-domain audio, resulting in error propagations to downstream generative tasks. In this paper, we first argue that information loss from codec compression degrades out-of-domain robustness. Then, we propose full-band 48 kHz ComplexDec with complex spectral input and output to ease the information loss while adopting the same 24 kbps bitrate as the baseline AuidoDec and ScoreDec. Objective and subjective evaluations demonstrate the out-of-domain robustness of ComplexDec trained using only the 30-hour VCTK corpus.</div>
+            <div class="bibtex">@inproceedings{wu2025complexdec,
+  title={ComplexDec: A Domain-robust High-fidelity Neural Audio Codec with Complex Spectrum Modeling},
+  author={Wu, Yi-Chiao and Marković, Dejan and Krenn, Steven and Gebru, Israel D. and Richard, Alexander},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year={2025},
+}</div>
+        </div>
+    </div>
 
     <!-- publication -->
     <div class="publication">
