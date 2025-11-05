@@ -63,22 +63,63 @@
 
     <!-- publication -->
     <div class="publication">
-        <div class="pubimg"><img src="publications/img/chatzigiapi2025avflow.png" class="thumbnail"></div>
+        <div class="pubimg"><img src="publications/img/mclean2025embody3d.png" class="thumbnail"></div>
         <div class="pubtext">
-            <div class="pubtitle">AV-Flow: Transforming Text to Audio-Visual Human-like Interactions</div>
-            <div class="pubauthors">Aggelina Chatziagapi, Louis-Philippe Morency, Hongyu Gong, Michael Zollhoefer, Dimitris Samaras, <b>Alexander Richard</b></div>
-            <div class="pubinfo">International Conference on Computer Vision (ICCV), 2025</div>
+            <div class="pubtitle">Embody 3D: A Large-scale Multimodal Motion and Behavior Dataset</div>
+            <div class="pubauthors">Clair McLean, ..., <b>Alexander Richard</b>, Michael Zollhoefer</div>
+            <div class="pubinfo">TechReport, 2025</div>
             <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
-            <div class="pubbox"><a href="https://arxiv.org/abs/2502.13133">pdf</a></div>
-            <div class="pubbox"><a href="https://aggelinacha.github.io/AV-Flow/">Project Page</a></div>
+            <div class="pubbox"><a href="https://arxiv.org/abs/2510.16258">pdf</a></div>
+            <div class="pubbox"><a href="https://www.meta.com/emerging-tech/codec-avatars/embody-3d">Project Page</a></div>
             <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
-            <div class="abstract">We introduce AV-Flow, an audio-visual generative model that animates photo-realistic 4D talking avatars given only text input. In contrast to prior work that assumes an existing speech signal, we synthesize speech and vision jointly. We demonstrate human-like speech synthesis, synchronized lip motion, lively facial expressions and head pose; all generated from just text characters. The core premise of our approach lies in the architecture of our two parallel diffusion transformers. Intermediate highway connections ensure communication between the audio and visual modalities, and thus, synchronized speech intonation and facial dynamics (e.g., eyebrow motion). Our model is trained with flow matching, leading to expressive results and fast inference. In case of dyadic conversations, AV-Flow produces an always-on avatar, that actively listens and reacts to the audio-visual input of a user. Through extensive experiments, we show that our method outperforms prior work, synthesizing natural-looking 4D talking avatars.</div>
-            <div class="bibtex">@inproceedings{chatziagapi2025avflow,
-      title={AV-Flow: Transforming Text to Audio-Visual Human-like Interactions},
-      author={Aggelina Chatziagapi and Louis-Philippe Morency and Hongyu Gong and Michael Zollhoefer and Dimitris Samaras and Alexander Richard},
-      booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-      year={2025}
-    }</div>
+            <div class="abstract">The Codec Avatars Lab at Meta introduces Embody 3D, a multimodal dataset of 500 individual hours of 3D motion data from 439 participants collected in a multi-camera collection stage, amounting to over 54 million frames of tracked 3D motion. The dataset features a wide range of single-person motion data, including prompted motions, hand gestures, and locomotion; as well as multi-person behavioral and conversational data like discussions, conversations in different emotional states, collaborative activities, and co-living scenarios in an apartment-like space. We provide tracked human motion including hand tracking and body shape, text annotations, and a separate audio track for each participant.</div>
+            <div class="bibtex">@misc{mclean2025embody3dlargescalemultimodal,
+      title={Embody 3D: A Large-scale Multimodal Motion and Behavior Dataset},
+      author={Claire McLean and Makenzie Meendering and Tristan Swartz and Orri Gabbay and Alexandra Olsen and Rachel Jacobs and Nicholas Rosen and Philippe de Bree and Tony Garcia and Gadsden Merrill and Jake Sandakly and Julia Buffalini and Neham Jain and Steven Krenn and Moneish Kumar and Dejan Markovic and Evonne Ng and Fabian Prada and Andrew Saba and Siwei Zhang and Vasu Agrawal and Tim Godisart and Alexander Richard and Michael Zollhoefer},
+      year={2025},
+}</div>
+        </div>
+    </div>
+
+
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/lee2025audiodriven.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">Audio Driven Real-Time Facial Animation for Social Telepresence</div>
+            <div class="pubauthors">Jiye Lee, Chenghui Li, Linh Tran, Shih-En Wei, Jason Saragih, <b>Alexander Richard</b>, Hanbyul Joo, Shaojie Bai</div>
+            <div class="pubinfo">Siggraph Asia, 2025</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://arxiv.org/abs/2510.01176">pdf</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">We present an audio-driven real-time system for animating photorealistic 3D facial avatars with minimal latency, designed for social interactions in virtual reality for anyone. Central to our approach is an encoder model that transforms audio signals into latent facial expression sequences in real time, which are then decoded as photorealistic 3D facial avatars. Leveraging the generative capabilities of diffusion models, we capture the rich spectrum of facial expressions necessary for natural communication while achieving real-time performance. Our novel architecture minimizes latency through two key innovations: an online transformer that eliminates dependency on future inputs and a distillation pipeline that accelerates iterative denoising into a single step. We further address critical design challenges in live scenarios for processing continuous audio signals frame-by-frame while maintaining consistent animation quality. The versatility of our framework extends to multimodal applications, including semantic modalities such as emotion conditions and multimodal sensors with head-mounted eye cameras on VR headsets. Experimental results demonstrate significant improvements in facial animation accuracy over existing offline state-of-the-art baselines, achieving 100 to 1000 times faster inference speed. We validate our approach through live VR demonstrations and across various scenarios such as multilingual speeches.</div>
+            <div class="bibtex">@article{lee2025audio,
+  title={Audio Driven Real-Time Facial Animation for Social Telepresence},
+  author={Lee, Jiye and Li, Chenghui and Tran, Linh and Wei, Shih-En and Saragih, Jason and Richard, Alexander and Joo, Hanbyul and Bai, Shaojie},
+  journal={arXiv preprint arXiv:2510.01176},
+  year={2025}
+}</div>
+        </div>
+    </div>
+
+
+    <!-- publication -->
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/2025interact.png" class="thumbnail"></div>
+        <div class="pubtext">
+            <div class="pubtitle">Seamless interaction: Dyadic audiovisual motion modeling and large-scale dataset</div>
+            <div class="pubauthors">Vasu Agrawal, Akinniyi Akinyemi, Kathryn Alvero, ..., <b>Alexander Richard</b>, ..., Michael Zollhoefer</div>
+            <div class="pubinfo">Tech Report, 2025</div>
+            <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="https://arxiv.org/abs/2506.22554">pdf</a></div>
+            <div class="pubbox"><a href="https://ai.meta.com/research/seamless-interaction/">Project Page</a></div>
+            <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
+            <div class="abstract">Human communication involves a complex interplay of verbal and nonverbal signals, essential for conveying meaning and achieving interpersonal goals. To develop socially intelligent AI technologies, it is crucial to develop models that can both comprehend and generate dyadic behavioral dynamics. To this end, we introduce the Seamless Interaction Dataset, a large-scale collection of over 4,000 hours of face-to-face interaction footage from over 4,000 participants in diverse contexts. This dataset enables the development of AI technologies that understand dyadic embodied dynamics, unlocking breakthroughs in virtual agents, telepresence experiences, and multimodal content analysis tools. We also develop a suite of models that utilize the dataset to generate dyadic motion gestures and facial expressions aligned with human speech. These models can take as input both the speech and visual behavior of their interlocutors. We present a variant with speech from an LLM model and integrations with 2D and 3D rendering methods, bringing us closer to interactive virtual agents. Additionally, we describe controllable variants of our motion models that can adapt emotional responses and expressivity levels, as well as generating more semantically-relevant gestures. Finally, we discuss methods for assessing the quality of these dyadic motion models, which are demonstrating the potential for more intuitive and responsive human-AI interactions.</div>
+            <div class="bibtex">@misc{agrawal2025interaction,
+      title={Seamless Interaction: Dyadic Audiovisual Motion Modeling and Large-Scale Dataset},
+      author={Vasu Agrawal and Akinniyi Akinyemi and Kathryn Alvero and Morteza Behrooz and Julia Buffalini and Fabio Maria Carlucci and Joy Chen and Junming Chen and Zhang Chen and Shiyang Cheng and Praveen Chowdary and Joe Chuang and Antony D'Avirro and Jon Daly and Ning Dong and Mark Duppenthaler and Cynthia Gao and Jeff Girard and Martin Gleize and Sahir Gomez and Hongyu Gong and Srivathsan Govindarajan and Brandon Han and Sen He and Denise Hernandez and Yordan Hristov and Rongjie Huang and Hirofumi Inaguma and Somya Jain and Raj Janardhan and Qingyao Jia and Christopher Klaiber and Dejan Kovachev and Moneish Kumar and Hang Li and Yilei Li and Pavel Litvin and Wei Liu and Guangyao Ma and Jing Ma and Martin Ma and Xutai Ma and Lucas Mantovani and Sagar Miglani and Sreyas Mohan and Louis-Philippe Morency and Evonne Ng and Kam-Woh Ng and Tu Anh Nguyen and Amia Oberai and Benjamin Peloquin and Juan Pino and Jovan Popovic and Omid Poursaeed and Fabian Prada and Alice Rakotoarison and Rakesh Ranjan and Alexander Richard and Christophe Ropers and Safiyyah Saleem and Vasu Sharma and Alex Shcherbyna and Jia Shen and Jie Shen and Anastasis Stathopoulos and Anna Sun and Paden Tomasello and Tuan Tran and Arina Turkatenko and Bo Wan and Chao Wang and Jeff Wang and Mary Williamson and Carleigh Wood and Tao Xiang and Yilin Yang and Julien Yao and Chen Zhang and Jiemin Zhang and Xinyue Zhang and Jason Zheng and Pavlo Zhyzheria and Jan Zikes and Michael Zollhoefer},
+      year={2025},
+}</div>
         </div>
     </div>
 
@@ -303,7 +344,7 @@ year={2025}}</div>
             <div class="pubbox trigger_abs"><a href="javascript:void(0)">Abstract</a></div>
             <div class="pubbox"><a href="https://arxiv.org/abs/2401.12160">pdf</a></div>
             <div class="pubbox trigger_bib"><a href="javascript:void(0)">BibTex</a></div>
-            <div class="abstract">Although recent mainstream waveform-domain end-to-end (E2E) neural audio codecs achieve impressive coded audio quality with a very low bitrate, the quality gap between the coded and natural audio is still significant. A generative adversarial network (GAN) training is usually required for these E2E neural codecs because of the difficulty of direct phase modeling. However, such adversarial learning hinders these codecs from preserving the original phase information. To achieve human-level naturalness with a reasonable bitrate, preserve the original phase, and get rid of the tricky and opaque GAN training, we develop a score-based diffusion post-filter (SPF) in the complex spectral domain and combine our previous AudioDec with the SPF to propose ScoreDec, which can be trained using only spectral and score-matching losses. Both the objective and subjective experimental results show that ScoreDec with a 24kbps bitrate encodes and decodes full-band 48kHz speech with human-level naturalness and well-preserved phase information.</div> 
+            <div class="abstract">Although recent mainstream waveform-domain end-to-end (E2E) neural audio codecs achieve impressive coded audio quality with a very low bitrate, the quality gap between the coded and natural audio is still significant. A generative adversarial network (GAN) training is usually required for these E2E neural codecs because of the difficulty of direct phase modeling. However, such adversarial learning hinders these codecs from preserving the original phase information. To achieve human-level naturalness with a reasonable bitrate, preserve the original phase, and get rid of the tricky and opaque GAN training, we develop a score-based diffusion post-filter (SPF) in the complex spectral domain and combine our previous AudioDec with the SPF to propose ScoreDec, which can be trained using only spectral and score-matching losses. Both the objective and subjective experimental results show that ScoreDec with a 24kbps bitrate encodes and decodes full-band 48kHz speech with human-level naturalness and well-preserved phase information.</div>
             <div class="bibtex">@inproceedings{wu2024scoredec,
       title={ScoreDec: A Phase-preserving High-Fidelity Audio Codec with A Generalized Score-based Diffusion Post-filter},
       author={Wu, Yi-Chiao and Markovic, Dejan and Krenn, Steven and Gebru, Israel D. and Richard, Alexander},
@@ -558,7 +599,7 @@ year={2025}}</div>
             <div class="abstract">This paper presents a generic method for generating full facial 3D animation from speech. Existing approaches to audio-driven facial animation exhibit uncanny or static upper face animation, fail to produce accurate and plausible co-articulation or rely on person-specific models that limit their scalability. To improve upon existing models, we propose a generic audio-driven facial animation approach that achieves highly realistic motion synthesis results for the entire face. At the core of our approach is a categorical latent space for facial animation that disentangles audio-correlated and audio-uncorrelated information based on a novel cross-modality loss. Our approach ensures highly accurate lip motion, while also synthesizing plausible animation of the parts of the face that are uncorrelated to the audio signal, such as eye blinks and eye brow motion.
 We demonstrate that our approach outperforms several baselines and obtains state-of-the-art quality both qualitatively and quantitatively. A perceptual user study demonstrates that our approach is deemed more realistic than the current state-of-the-art in over 75% of cases. We recommend watching the supplemental video before reading the paper.</div>
             <div class="bibtex">@inproceedings{richard2021meshtalk,
-  title={MeshTalk: 3D Face Animation from Speech using Cross-Modality Disentanglement}, 
+  title={MeshTalk: 3D Face Animation from Speech using Cross-Modality Disentanglement},
   author={Alexander Richard and Michael Zollhoefer and Yandong Wen and Fernando de la Torre and Yaser Sheikh},
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   year={2021}
